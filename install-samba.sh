@@ -1,6 +1,12 @@
 echo "Montage de sda2 dans /home/nas"
 mkdir -p /home/nas
 mount /dev/sda2 /home/nas
+rm /etc/fstab
+cp fstab /etc/
+rm /etc/apt/sources.list
+cp sources.list /etc/apt/
+apt-get install debian-keyring -y
+apt-get update
 echo "Installation de Samba"
 apt-get install samba samba-common libcups2 -y
 mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
