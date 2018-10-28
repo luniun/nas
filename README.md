@@ -4,8 +4,5 @@ Installation du Nas " Home Media Cloud Edition " sur disc dur vierge Distributio
 Installation Complete: 
 
 ```css
-'chmod +x install.sh && ./install.sh'
+chmod +x install.sh && ./install.sh
 ```
-
-
-
